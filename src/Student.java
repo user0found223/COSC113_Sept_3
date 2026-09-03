@@ -17,5 +17,18 @@ public class Student{
         s1= new Student();
         System.out.println(s1);
         System.out.println(s1.FN);
+        Student s2;
+        s2 = new Student("Tom", "Lance", 23011439);
+        System.out.println(s2.FN);
+        System.out.println(s2.LN);
+        System.out.println(s2.id);
+        Student s3;
+        String FN = "josh";
+        String LN = "Hunt";
+        int id = 2304457;
+        s3 = new Student(FN, LN, id);
+        System.out.println(s3.FN);
+        System.out.println(s3.LN);
+        System.out.println(s3.id);
     }
 }
