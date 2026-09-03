@@ -1,3 +1,7 @@
+//You can create overloaded constructors by varying the parameter number and order
+//
+
+
 public class Student{
     String FN;
     String LN;
@@ -7,7 +11,21 @@ public class Student{
         this.LN = "No last name";
         this.id = 2301927;
     }
+//    Student(String FN, String LN){
+//        this.FN=FN;
+//        this.LN=LN;
+//    }
+    Student(String FN, String LN){
+        this.FN=FN;
+        this.LN=LN;
+    }
     Student(String FN, String LN, int id){
+//        this.FN = FN;
+//        this.LN = LN;
+        this(FN,LN);
+        this.id = id;
+    }
+    Student(String FN, int id, String LN){
         this.FN = FN;
         this.LN = LN;
         this.id = id;
@@ -30,5 +48,10 @@ public class Student{
         System.out.println(s3.FN);
         System.out.println(s3.LN);
         System.out.println(s3.id);
+        Student s4 = new Student("Random","Name");
+        System.out.println(s4.FN);
+        System.out.println(s4.LN);
+        Student s5;
+        s5= new Student(FN,id,LN);
     }
 }
