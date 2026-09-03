@@ -30,6 +30,32 @@ public class Student{
         this.LN = LN;
         this.id = id;
     }
+    // Methods = getters and setters
+
+    public String getFN() {
+        return FN;
+    }
+
+    public void setFN(String FN) {
+        this.FN = FN;
+    }
+
+    public String getLN() {
+        return LN;
+    }
+
+    public void setLN(String LN) {
+        this.LN = LN;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public static void main(String [] args){
         Student s1 = new Student("Joshua", "Hunter", 2301927);
         s1= new Student();
@@ -53,5 +79,6 @@ public class Student{
         System.out.println(s4.LN);
         Student s5;
         s5= new Student(FN,id,LN);
+
     }
 }
